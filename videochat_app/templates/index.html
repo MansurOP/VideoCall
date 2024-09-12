@@ -1,0 +1,181 @@
+{% comment %} {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Video Conference</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <body>
+    <div class="intro">
+        <h1>Welcome to my Simple Video Conferencing App!</h1>
+        <h2>For all your professional and personal needs!</h2>
+        <!-- create a signup and signin button-->
+        <a href="{% url 'login' %}" class="button">Sign In</a>
+        <a href="{% url 'register' %}" class="button">Sign Up</a>
+    </div>
+  </body>
+</head>
+</html> {% endcomment %}
+
+
+
+{% comment %} 
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Video Conference</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="intro">
+    <h1>Welcome to my Simple Video Conferencing App!</h1>
+    <h2>For all your professional and personal needs!</h2>
+    <!-- create a signup and signin button-->
+    <a href="{% url 'login' %}" class="button">Sign In</a>
+    <a href="{% url 'register' %}" class="button">Sign Up</a>
+    
+    
+  </div>
+
+  <!-- Social Links Section -->
+  <div class="social-links">
+    <a href="https://github.com/MansurOP" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/mansur-ahmed-02b17b252/" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </div>
+
+  <style>
+    .social-links {
+        margin-top: 20px;
+        margin-bottom: 20px; /* Adds space below the social links */
+    }
+    .social-links a {
+      text-decoration: none;
+      margin-right: 15px;
+      font-size: 20px;
+      color: #000;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #0077b5; /* LinkedIn Blue */
+    }
+    .social-links .fa-github {
+      margin-right: 8px;
+    }
+    .social-links .fa-linkedin {
+      margin-right: 8px;
+    }
+
+    .intro a:hover {
+        color: #0077b5; /* LinkedIn Blue */
+        transition: color 0.3s;
+      }
+
+  </style>
+  
+</body>
+</html> {% endcomment %}
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Video Conference</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="intro">
+    <h1>Welcome to my Simple Video Conferencing App!</h1>
+    <!-- create a signup and signin button-->
+    <a href="{% url 'login' %}" class="button">Sign In</a>
+    
+    <a href="{% url 'register' %}" class="button">Sign Up</a>
+  </div>
+
+  <!-- Social Links Section (footer) -->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://github.com/MansurOP" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/mansur-ahmed-02b17b252/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+  </footer>
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .intro {
+      flex-grow: 1; /* Pushes the footer to the bottom */
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Footer styling */
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      margin-right: 15px;
+      font-size: 20px;
+      color: #000;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #0077b5; /* LinkedIn Blue */
+    }
+
+    .social-links .fa-github {
+      margin-right: 8px;
+    }
+
+    .social-links .fa-linkedin {
+      margin-right: 8px;
+    }
+
+    .intro a:hover {
+      color: #0077b5; /* LinkedIn Blue */
+      transition: color 0.3s;
+    }
+
+    /* Remove margin for the last link */
+    .social-links a:last-child {
+      margin-right: 0;
+    }
+  </style>
+</body>
+</html>
